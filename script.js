@@ -2,7 +2,7 @@
 let width = 560,
   height = 460;
 
-const projection = d3.geo.mercator();
+const projection = d3.geo.mercator().scale(3);
 
 const svg = d3.select('body').append('svg')
             .attr('width', width)
