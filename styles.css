@@ -1,3 +1,8 @@
 svg{
-background: #e3e3e3;
+background: #e2e2e2;
+}
+path {
+  stroke-width: 1px;
+  fill: blue;
+  stroke: white;
 }
