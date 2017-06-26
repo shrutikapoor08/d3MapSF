@@ -47,6 +47,7 @@ function renderSFMap() {
 }
 
 function renderVehicles() {
+  //TODO: remove hardcoded route and t.
   const VEHICLESURL = 'http://webservices.nextbus.com/service/publicJSONFeed?command=vehicleLocations&a=sf-muni&r=N&t=1144953500233';
   const xhr = new XMLHttpRequest();
   const url = VEHICLESURL;
@@ -57,6 +58,10 @@ function renderVehicles() {
       const vehicles = JSON.parse(xhr.response).vehicle;
       const g = svg.insert('g', '#neighborhoods + *')
         .attr('id', 'vehicles');
+
+      //TODO: remove vehicle's previous position. In the absence of an animating marker,
+      // I am appending to svg as opposed to overwriting markers. This is to show that the
+      // data does update.
       const circles = g.selectAll('circle')
         .data(vehicles)
         .enter()
