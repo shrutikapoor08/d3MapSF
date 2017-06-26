@@ -1,6 +1,6 @@
 # Real time SF Muni locations
 
-This app draws the real-time positions of San Francisco's buses and trains (SF Muni) using d3.js
+This app draws the real-time positions of San Francisco's buses and trains (SF Muni) using d3.js.
 SF Muni locations are drawn from http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf. 
 
 ## Dependencies
