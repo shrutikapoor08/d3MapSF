@@ -25,7 +25,7 @@ function renderSFMap() {
       .append('svg')
       .attr('height', height)
       .attr('width', width)
-      .attr('viewBox', '60 40 500 450');
+      .attr('viewBox', '0 140 650 450');
 
     const path = d3.geoPath().projection(projection);
     d3.selectAll('path').attr('d', path);
